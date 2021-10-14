@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_data",
+  "info": {
+    "name": "UserData",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "user_data"
+    },
+    "telefone": {
+      "type": "string",
+      "required": true
+    },
+    "nome": {
+      "type": "string"
+    }
+  }
+}
